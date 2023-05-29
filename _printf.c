@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * _printf - function that prints formatted output to standard output
  * @format: character string
  * @...: any other agrguments /depends on the number of given format specifiers
  * Return: nb_char / number of characters printed, or -1 if fail
  */
+
 int _printf(const char *format, ...)
 {
 	int cnt = 0;

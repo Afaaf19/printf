@@ -10,6 +10,7 @@ int is_printable(char c)
 {
 	if (c >= 32 && c < 127)
 		return (1);
+
 	return (0);
 }
 
@@ -47,6 +48,7 @@ int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
+
 	return (0);
 }
 
@@ -80,5 +82,6 @@ long int convert_size_unsgnd(unsigned long int num, int size)
 		return (num);
 	else if (size == S_SHORT)
 		return ((unsigned short)num);
+
 	return ((unsigned int)num);
 }

@@ -1,5 +1,7 @@
 #include "main.h"
+
 void print_buffer(char buffer[], int *buff_ind);
+
 /**
  * _printf - function that prints formatted output to standard output
  * @format: character string
@@ -47,12 +49,14 @@ precision, size);
 	va_end(list);
 	return (printed_chars);
 }
+
 /**
  * print_buffer - function that prints the buffer's content
  * @buffer: array of chars
  * @buff_ind: parameter 2
  * Return: void
  */
+
 void print_buffer(char buffer[], int *buff_ind)
 {
 	if (*buff_ind > 0)

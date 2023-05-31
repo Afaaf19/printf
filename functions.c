@@ -41,7 +41,7 @@ int print_string(va_list types, char buffer[],
 	UNUSED(width);
 	UNUSED(precision);
 	UNUSED(size);
-	if (str == NULL)
+	if (s == NULL)
 	{
 		s = "(null)";
 		if (precision >= 6)
@@ -58,7 +58,7 @@ int print_string(va_list types, char buffer[],
 	{
 		if (flags & F_MINUS)
 		{
-			write(1, &str[0], length);
+			write(1, &s[0], length);
 			for (i = width - length; i > 0; i--)
 				write(1, " ", 1);
 			return (width);
